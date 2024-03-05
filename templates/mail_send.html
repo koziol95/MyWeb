@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %} The Koziol Email Send{% endblock %}
+
+{% block content %}
+<style>
+    
+    .container-1 {
+        font-family: "Playfair Display";
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        justify-content: center;
+    }
+    
+    p {
+        margin-bottom: 10px;
+    }
+    .button {
+        justify-content: center;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+</style>
+<div class="container-1 text-white justify-content-center" >
+    <h1>Email Confirmation</h1>
+    <p>Thank you for contacting ! Your message has been successfully sent.</p>
+    <p>We will get back to you as soon as possible.</p>
+    <a href="/" class="button">Return to Homepage</a>
+</div>
+
+{% endblock %}
